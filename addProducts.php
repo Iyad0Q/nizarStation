@@ -1,3 +1,23 @@
+<?php
+
+include "includes/connect.php";
+
+//form inputs variables
+$ptitle = $_POST["ptitle"];
+$pdetails = $_POST["pdetails"];
+$pimg = $_POST["pimg"];
+$submit = $_POST["submit"];
+
+if (isset($submit)) {
+    //insert the form data to the database
+    $insert = "INSERT INTO addp(`ptitle`, `pdetails`, `pimg`) VALUES ('$ptitle', '$pdetails', '$pimg')"; 
+    //send the data from teh form to the database
+    mysqli_query($connect, $insert);
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="ar">
 <head>
@@ -18,14 +38,15 @@
 
     <main>
         <h2>إضافة منتج جديد</h2>
-        <form action="api.php" method="POST"">
+        <form action="addProducts.php" method="POST"">
             <input type="text" name="ptitle" id="ptitle" placeholder="اكتب اسم المنتج هنا">
             <br>
-            <input type="text" name="pdetails" id="pdetails" placeholder="اكتب تفاصيل المنتج هنا">
+            <textarea name="pdetails" id="pdetails" cols="18" rows="5" placeholder="اكتب تفاصيل المنتج هنا"></textarea>
             <br>
-            <input type="text" name="pimg" id="pimg" placeholder="ضع رابط صورة المنتج هنا">
+            <input type="text"  name="pimg" id="pimg" placeholder="ضع رابط صورة المنتج هنا">
             <br>
-            <input type="submit" value="submit" id="submit">
+            <input type="submit" value="submit" id="submit" name="submit">
+            
         </form>
     </main>
 </body>
