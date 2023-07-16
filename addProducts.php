@@ -1,6 +1,7 @@
 <?php
 
 include "includes/connect.php";
+include "includes/api.php";
 
 //form inputs variables
 $ptitle = $_POST["ptitle"];
@@ -11,8 +12,9 @@ $submit = $_POST["submit"];
 if (isset($submit)) {
     //insert the form data to the database
     $insert = "INSERT INTO addp(`ptitle`, `pdetails`, `pimg`) VALUES ('$ptitle', '$pdetails', '$pimg')"; 
+
     //send the data from teh form to the database
-    mysqli_query($connect, $insert);
+    $query = mysqli_query($connect, $insert);
 }
 
 ?>
