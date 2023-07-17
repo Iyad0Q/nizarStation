@@ -1,7 +1,6 @@
 <?php
 
 include "includes/connect.php";
-include "includes/api.php";
 
 //form inputs variables
 $ptitle = $_POST["ptitle"];
