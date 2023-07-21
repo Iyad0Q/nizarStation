@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  text-align: center;
+}
+
+header {
+  margin-top: 20px;
+}
+
+#store_label {
+  font-size: 45px;
+}
+#store_label span, header h2{
+  color: red;
+  text-decoration: underline;
+}
+header h2 {
+  font-size: 30px;
+  margin-top: 20px;
+}
+main h2 {
+  font-size: 30px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.productsContainer {
+  background-color: aliceblue;
+  border: 3px solid rgb(251, 139, 139);
+  text-align: right;
+  padding: 30px;
+}
+
+.productsContainer h3, p {
+  font-size: 25px;
+}
+
+.productsContainer img {
+  height: 350px;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.productsContainer img.click{
+  /* position: relative;
+  transform: translateX(-50);
+  left: 50%; */
+  height: 720px;
+  margin: 20px;
+}
