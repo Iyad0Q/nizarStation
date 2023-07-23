@@ -2,6 +2,8 @@
 
 include "includes/connect.php";
 
+error_reporting(0); //hide the errors
+
 //form inputs variables
 $ptitle = $_POST["ptitle"];
 $pdetails = $_POST["pdetails"];
@@ -25,14 +27,14 @@ if (isset($submit)) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>nezarStation | add products</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="addP.css">
 </head>
 <body>
     <header>
         <h1>
             !
-            NezarStation
-            <span>كن شريك مع</span>
+            <span>NezarStation</span>
+            كن شريك مع
         </h1>
         <p>للرجوع للصحفة الرئيسية <a href="home.html">اضغط هنا</a></p>
     </header>
@@ -49,6 +51,12 @@ if (isset($submit)) {
             <input type="submit" value="submit" id="submit" name="submit">
             
         </form>
+        <ul>
+            <li> <img src="https://cdn-icons-png.flaticon.com/512/2425/2425919.png" alt="icon" id="img1"> </li>
+            <li> <img src="https://www.iconarchive.com/download/i139657/microsoft/fluentui-emoji-flat/Kick-Scooter-Flat.1024.png" alt="icon" id="img2"> </li>
+        </ul>
+        
+
     </main>
 </body>
 </html>

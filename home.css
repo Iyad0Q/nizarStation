@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -6,6 +9,7 @@
 
 body {
   text-align: center;
+  font-family: 'Cairo', Tahoma, sans-serif;
 }
 
 header {

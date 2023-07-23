@@ -1,0 +1,78 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    text-align: center;
+    background-color: aliceblue;
+    border: 3px solid rgb(251, 139, 139);
+    padding: 10px;
+    margin: 10px;
+    font-family: 'Cairo', Tahoma, sans-serif;
+}
+
+header h1 {
+    margin-bottom: 20px;
+}
+
+header h1 span {
+    color: red;
+    text-decoration: underline;
+}
+
+header p {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+input, textarea {
+    border: 3px solid rgb(251, 139, 139);
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    font-family: 'Cairo', Tahoma, sans-serif;
+}
+
+#ptitle, #pimg {
+    width: 300px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+form textarea {
+    resize: none;
+    width: 300px;
+    height: 100px;
+}
+
+#submit {
+    background-color: white;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: rgb(244, 243, 243);
+}
+#submit:active {
+    background-color: rgb(217, 217, 217);
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li img {
+    height: 300px;
+}
+
+
